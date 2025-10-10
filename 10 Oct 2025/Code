@@ -1,3 +1,24 @@
-SELECT customer_id FROM customer_reviews 
-WHERE customer_name LIKE ('%Kate')
+CREATE TABLE customersss (
+  customer_id INT,
+  customer_name VARCHAR(50),
+  tip_amount INT,
+  comments VARCHAR(50));
+  
+INSERT INTO customersss(customer_id, customer_name, tip_amount, comments)
+VALUES
+(2109, "KaTe BiSHops", 1233, "average"),
+(2110, "Kate haNk", 7154, "above average"),
+(2111, "billy WaTson", 2634, "above average"),
+(2112, "MaRShal", 1236, "average"),
+(2113, "drAke KAte", 7664, "average"),
+(2114, "katie KaTe", 2965, "above average"),
+(2115, "Will Kane", 9242, "outstanding"),
+(2116, "Harry KATe", 6231, "average"),
+(2117, "Nik Star", 4139, "outstanding"
+);
+
+SELECT customer_id FROM customersss
+WHERE customer_name LIKE '%KATE'
 ORDER BY tip_amount DESC LIMIT 1;
+
+
